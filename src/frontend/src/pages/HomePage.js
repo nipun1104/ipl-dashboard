@@ -26,7 +26,7 @@ export const HomePage = () => {
                 <h1 className="app-name">IPL Dashboard</h1>
             </div>
             <div className="team-grid">
-                {teams.map(team => <TeamTitle teamName={team.teamName}/>)}
+                {teams.map(team => <TeamTitle key={team.id} teamName={team.teamName}/>)}
             </div>
         </div>
     );
